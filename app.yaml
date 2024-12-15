@@ -1,0 +1,10 @@
+runtime: python39  # Adjust this for your Python version (python39, python38, etc.)
+entrypoint: python app.py  # This runs your app
+
+instance_class: F2  # Optional: Adjust based on your needs
+env_variables:      # Optional: Define environment variables here
+  FLASK_ENV: production
+
+handlers:
+  - url: /.*
+    script: auto
