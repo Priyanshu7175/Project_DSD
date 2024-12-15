@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eaterly</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-base-200 min-h-screen">
+    <div class="max-w-7xl w-full p-8 mx-auto">
+      <div class="flex-1">
+        <a href="/" class="font-semibold text-xl text-green-500"
+          >eaterly</a
+        >
+      </div>
+    </div>
+    <div class="hero py-64">
+      <div class="hero-content text-center">
+        <div class="max-w-2xl flex flex-col items-center">
+          <h1
+            class="text-4xl font-semibold mb-8 text-neutral-300 leading-tight"
+          >
+            Discover new culinary scenes with us. Bon appétit!
+          </h1>
+            <form method="GET" action="/recommendation">
+              <div class="flex items-center gap-x-3">
+                <input type="text" name="search" placeholder="Type here" class="input input-bordered w-full" />
+                <button type="submit" class="btn bg-green-500 hover:bg-green-600">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-5 text-white"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                    />
+                  </svg>
+                  <span class="text-white font-medium">Search</span>
+                </button>
+              </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
