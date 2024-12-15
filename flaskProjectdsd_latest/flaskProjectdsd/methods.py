@@ -3,7 +3,7 @@ from google.cloud.bigtable import row_filters
 import pandas as pd
 from utils import format_time
 
-client = bigtable.Client(project='yelp-test-442001', admin=True)
+client = bigtable.Client(project='norse-acrobat-444522-a3', admin=True)
 instance = client.instance('yelp-project')
 table = instance.table('business')
 
