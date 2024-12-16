@@ -42,7 +42,7 @@
         {% for restaurant in restaurants %}
             <div class="relative card shadow-xl shadow-black/20">
               <figure>
-                  <img src="{{ url_for('static', filename='images/not_available.jpg') }}" alt="Placeholder">
+                   <img src="{{ url_for('static', filename='images/' + restaurant.image) }}" alt="Restaurant Image">
               </figure>
               <div class="card-body">
                 <h2 class="card-title font-medium">
